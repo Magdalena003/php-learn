@@ -1,0 +1,20 @@
+<?php
+echo "działczy<br>";
+$dict1 = array("N1"=>"V1","N2"=>"V2","N3"=>"V3");
+echo "<table><tbody><tr>";
+foreach($dict1 as $key=>$value)
+{
+    echo "<td>$key</td>";
+}
+echo "</tr><tr>";
+foreach($dict1 as $key=>$value)
+{
+    echo "<td>$value</td>";
+}
+echo "</tr></table></tbody>";
+?>
+<style>
+tr,td{
+    border: 1px solid black;
+}
+</style>
