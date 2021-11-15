@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<style>
+tr,td,table{border: 1px solid black;}
+</style>
+<body>
+<table>
+<tbody>
+
+  <?php
+  
+$age = array("n1"=>"Kolumna1","n2"=>"Kolumna2","n3"=>"Kolumna3");
+foreach($age as $x => $val){
+echo "<td>$val</td>";
+}
+
+for($i=0;$i<10;$i++){
+$x=rand(1,10);
+$y=rand(40,99);
+$u="NULL";
+echo "<tr><td>$x</td><td>$y</td><td>$u</td></tr>";
+}
+
+?>
+
+</tbody>
+</table>
+</body>
+</html>
